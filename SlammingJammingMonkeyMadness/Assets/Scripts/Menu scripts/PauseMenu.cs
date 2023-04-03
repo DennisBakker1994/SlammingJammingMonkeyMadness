@@ -35,6 +35,7 @@ public class PauseMenu : MonoBehaviour
     public void GameMenu()
     {
         hearts.SetActive(false);
+        Cursor.lockState = CursorLockMode.None;
     }
     public void LoadGame()
     {
@@ -46,5 +47,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         hearts.SetActive(true);
         player.GetComponent<Movement>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
