@@ -10,6 +10,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject hearts;
     public GameObject pauseMenu;
     public GameObject player;
+    public GameObject gameMusic;
+    public GameObject menuMusic;
+    public GameObject mainMenu;
+
     
     void Update()
     {
@@ -19,7 +23,7 @@ public class PauseMenu : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(!background.activeSelf)
+            if(!background.activeSelf && !mainMenu.activeSelf)
             {
                 background.SetActive(true);
                 pauseMenu.SetActive(true);
@@ -36,6 +40,8 @@ public class PauseMenu : MonoBehaviour
     {
         hearts.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
+        gameMusic.SetActive(false);
+        menuMusic.SetActive(true);
     }
     public void LoadGame()
     {
@@ -48,5 +54,7 @@ public class PauseMenu : MonoBehaviour
         hearts.SetActive(true);
         player.GetComponent<Movement>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
+        gameMusic.SetActive(true);
+        menuMusic.SetActive(false);
     }
 }
