@@ -7472,6 +7472,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonkeyShadeFlat
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 836737e55c5c3bb419c12d1e2047e267,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836737e55c5c3bb419c12d1e2047e267, type: 3}
 --- !u!1 &534834579
@@ -21425,7 +21430,7 @@ Animator:
   m_GameObject: {fileID: 1678562810}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 043c2c03da245ab4bbc6690c88070c2f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21453,7 +21458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14eb9968c607f34882a60b3671ba0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 1678562811}
 --- !u!114 &1678562814
 MonoBehaviour:
   m_ObjectHideFlags: 0
